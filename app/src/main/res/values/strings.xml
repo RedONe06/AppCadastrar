@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppCadastro</string>
+    <string name="btnCadastrar">Cadastrar usuários</string>
+    <string name="btnVisualizar">Visualizar cadastrados</string>
+    <string name="txtTitulo">Preencha os dados abaixo:</string>
+    <string name="nome">Nome:</string>
+    <string name="endere_o">Endereço:</string>
+    <string name="telefone">Telefone:</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cancelar">Cancelar</string>
+</resources>

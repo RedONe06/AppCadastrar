@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/layoutTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:id="@+id/txtRegistros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registros: 1/10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="60dp"/>
+        <Button
+            android:id="@+id/btnFechar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Fechar"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/labelNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/layoutTitulo"/>
+
+    <TextView
+        android:id="@+id/txtNomeResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_below="@id/labelNome"/>
+    <TextView
+        android:id="@+id/labelEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtNomeResultado"/>
+    <TextView
+        android:id="@+id/txtEnderecoResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:layout_below="@id/labelEndereco"/>
+    <TextView
+        android:id="@+id/labelTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Telefone:"
+        android:textSize="20sp"
+        android:layout_below="@id/txtEnderecoResultado"/>
+    <TextView
+        android:id="@+id/txtTelefoneResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@id/labelTelefone"/>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtTelefoneResultado">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Anterior"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Proximo"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
